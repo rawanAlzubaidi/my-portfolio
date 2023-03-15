@@ -1,90 +1,90 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
-
+import divider from "../assets/img/divider.png";
+import divider2 from "../assets/img/divider2.png";
 import TrackVisibility from 'react-on-screen';
 
 export const Skills = () => {
   return (
-    <section>
+    <section className="Skill-section" id="Skills">
+         <div className="divider">   <img src={divider} alt="Header Img"/></div>
         <Container>
             <div className="Skills">
-                <h1></h1>
                 <h1> Tools and Technologies I use to bring projects to life:</h1>
-                <Row xs={3} md={4} lg={5}>
+                <Row xs={3} md={4} lg={6}>
                     <Col> 
-                        <a href="https://www.w3schools.com/cpp/" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus"/>
-                        </a>
-                        <p>C++</p>
+                        <i class="devicon-cplusplus-plain"></i>
+                        <p >C++</p>
+                    </Col>
+                    <Col> 
+                        <i class="devicon-ruby-plain"></i>
+                        <p >Ruby</p>
                     </Col>
                     <Col>
-                        <a href="https://www.w3schools.com/cpp/" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-plain.svg" alt="HTML"/>
-                        </a>
+                        <i class="devicon-html5-plain"></i>
                         <p>HTML</p>
-
                     </Col>
                     <Col>
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" />
-                        </a> 
-                        <p>JavaScript</p>
+                        <i class="devicon-javascript-plain"></i>
+                       <p>JavaScript</p>
                     </Col>
                     <Col>
-                        <a href="https://www.w3schools.com/cpp/" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-plain.svg" alt="cplusplus"/>
-                        </a>
+                        <i class="devicon-css3-plain"></i>
                         <p>CSS</p>
-
                     </Col>
-                    <Col> 
-                        <a href="https://www.python.org" target="_blank"> 
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python"/>
-                        </a>
-                        <p>Python</p>
-                    </Col>
-                </Row>
 
-                <Row xs={3} md={4} lg={5}>
                     <Col> 
-                        <a href="https://www.python.org" target="_blank"> 
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="python"/>
-                        </a>
+                        
+                        <i class="devicon-react-original"></i>   
                         <p>React</p>
                     </Col>
+                </Row>
+
+                <Row xs={3} md={4} lg={6}>
+                    <Col> 
+                        <i class="devicon-python-plain"></i>
+                        <p>Python</p>
+                    </Col>
                     <Col>
-                        <a href="https://www.java.com" target="_blank"> 
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" alt="java" />
-                        </a> 
+                        <i class="devicon-github-original"></i> 
                         <p>Github</p>
                     </Col>
-                    <Col>
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/googlecloud/googlecloud-original.svg" alt="javascript" />
-                        </a> 
+                    {/* <Col>
+                        <i class="devicon-googlecloud-plain"></i>
                         <p>Google cloud</p>
+                    </Col> */}
+                    <Col>
+                        <i class="devicon-azure-plain"></i>
+                        <p>Azure</p>
                     </Col>
                     <Col>
-                        <a href="https://www.w3schools.com/cpp/" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/azure/azure-original.svg" alt="cplusplus"/>
-                        </a>
-                        <p>Azure</p>
+                        <i class="devicon-jira-plain"></i>
+                        <p>Jira</p>
                     </Col>
 
                     <Col>
-                        <a href="https://www.w3schools.com/cpp/" target="_blank">
-                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons//jquery/jquery-original.svg" alt="cplusplus"/>
-                        </a>
+                        <i class="devicon-jquery-plain"></i>
                         <p>Jquery</p>
                     </Col>
+                    <Col> 
+                        
+                        <i class="devicon-figma-plain"></i>   
+                        <p>Figma</p>
+                    </Col>
+
                 </Row>
+                <Row xs={1} md={1} lg={1}>
+                    <Col>
+                        <i class="devicon-premierepro-plain"></i>
+                        <p>Premiere Pro</p>
+                    </Col>
+                </Row>
+
 
             </div>
         </Container>
-
-
-    
+        <div className="divider2">   <img src={divider2} alt="Header Img"/></div>
     </section>
   )
 }

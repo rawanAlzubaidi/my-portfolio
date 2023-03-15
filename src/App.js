@@ -1,4 +1,9 @@
-import logo from './logo.svg';
+import{
+  BrowserRouter, 
+  Routes,
+  Route,
+} from 'react-router-dom'
+
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from "./components/NavBar";
@@ -7,18 +12,21 @@ import { Footer } from "./components/Footer";
 import { AboutMe } from "./components/AboutMe";
 import { Projects } from "./components/Projects";
 import { Skills } from "./components/Skills";
+import { Testing } from "./components/Testing";
+import { BackToTop } from "./components/BackToTop";
 function App() {
   return (
     <div className="App">
       <NavBar />
+      <BackToTop />
       <Banner />
-
-      <AboutMe />
       <Skills />
       <Projects />
+      <AboutMe />
       <Footer />
-    
     </div>
+    
+
   );
 }
 

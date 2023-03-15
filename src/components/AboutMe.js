@@ -2,63 +2,26 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import React from 'react';
 import TrackVisibility from 'react-on-screen';
+import divider2 from "../assets/img/navy_dark.png";
 
      // about me section changing img on click 
-     function arabic(){
-        document.getElementById('myImage')
-        .src="img/rawanlogo/name.jpg";
-    }
-     
-    function travel(){
-        document.getElementById('myImage')
-        .src="img/rawanlogo/travel.jpg";
-    }
-    function book(){
-       document.getElementById('myImage')
-       .src="img/rawanlogo/books.jpg";
-   }
-   function plant(){
-       document.getElementById('myImage')
-       .src="img/rawanlogo/plant.jpg";
-   }
-   function video(){
-       document.getElementById('myImage')
-       .src="img/rawanlogo/finish.jpg";
-   }
-   function reset(){
-     document.getElementById('myImage')
-     .src="img/rawanlogo/start.jpg";
- }
-
-
 
 export const AboutMe = () => {
+    
   return (
-    <Container className='aboutMe'>  
-    <h2>Howdyhack</h2>
-    <Row xs={1} md={2} lg={2}>
-        <Col  xs={{ order: 2 }}>
-            <p>
-            I am a junior studying Computer Science at Texas A&M. Aside from academic life, here are some random facts about me.
-             I was born in Iraq, and my first language is Arabic. My name, Rawan, in Arabic is written as روان(right to left). I am fluent in Turkish and English and know some sign language.
-              I TRAVELED a lot growing up. I lived in six countries, Syria, Egypt, Malaysia, Turkey, and have been living in the US for the past 7 years (this is the longest I have stayed in a country). 
-              Where I became engulfed in every culture and despite the hardships that came with these changes, these experience have shaped me in who I am today. And if I could do it over again, 
-              I wouldn’t change a thing. I love to READ, especially different literature from all around the world. I am a proud PLANT mom, I have plants in every corner of my apartment and I somehow have managed to keep them alive. 
-              I have an obsession with doors. I like how intricate the designs can be and play into an overall the aesthetic of a building. And day by day, my doors album is growing, with now over 100 pictures.
-               Door pictures are not the only thing I like to collect, I also have an extensive postcard collection. My current hometown is Austin, where I can fully indulge myself in nature. But my dream is to live in a city where I can commute everywhere with a bike.
-                I want to be able to document the things I enjoy and bring it into one platform. Which is why, recently, I have been enjoying videography andVIDEO EDITING. Filming a short film or a documentary is on my bucket list.
-            </p>
-
-        </Col>
-        <Col  xs={{ order: 1 }}>
-            <div className="slide-container">
-           
-
-            </div>
-        </Col> 
-    </Row>
+  <section> 
+    <Container className='aboutMe' id="AboutMe">  
+      <div className="headers"><h1>Get to know me!</h1></div>
+        <p>As a Computer Science junior at Texas A&M, I am constantly learning and growing in the field of technology. But there is much more to me than just academia. I was born in Iraq, and my first language is Arabic. My name, Rawan, in Arabic is written as روان (right to left). I am fluent in Turkish and English and know some sign language.
+        Growing up, I had the privilege of living in six different countries, including Syria, Egypt, Malaysia, Turkey, and now the United States for the past 7 years (this is the longest I have stayed in a country).  This has given me a unique perspective and a deep appreciation for different cultures.
+          I love to read, especially different literature from all around the world.  I am also a proud plant mom, and my apartment is filled with greenery in every corner.
+          I currently call Austin my home, where I can fully indulge myself in nature.
+            I have discovered a passion for videography and video editing. I love being able to document the things I enjoy and bring them into one platform. One of my biggest aspirations is to film a short film or a documentary, combining my love of storytelling and technology. I believe that with hard work and determination, anything is possible, and I am excited to see where this journey takes me.
+        </p>
 
     </Container>
+    <div className="divider2">   <img src={divider2} alt="Header Img"/></div>
+    </section>
 
   )
 }
