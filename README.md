@@ -1,4 +1,7 @@
 # Getting Started with Create React App
+My professional portfolio displaying a selcetion of my projects and skills 
+https://rawanaluzbaidi.netlify.app/
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
