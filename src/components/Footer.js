@@ -12,11 +12,11 @@ export const Footer = () => {
               <a href="https://github.com/rawanAlzubaidi" target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="Icon" /></a>
               <a href="https://www.linkedin.com/in/rawan-alzubaidi/" target="_blank" rel="noopener noreferrer"><img src={navIcon2} alt="Icon" /></a>
               <a href="https://www.instagram.com/rawan.alzubaidii/" target="_blank" rel="noopener noreferrer"><img src={navIcon3} alt="Icon" /></a>
-              <a href="https://rawanalzubaidi.blogspot.com" target="_blank" rel="noopener noreferrer">  <FaBloggerB color="black"/> </a>
+              <a href="https://www.rawankitabat.com/" target="_blank" rel="noopener noreferrer">  <FaBloggerB color="black"/> </a>
             </div>
-            {/* <p>Copyright 2022. All Rights Reserved</p> */}
       </Container>
-      <p>© Rawan Alzubaidi 2023</p>
+      <p>© Rawan Alzubaidi 2024</p>
+
     </footer>
   )
 }

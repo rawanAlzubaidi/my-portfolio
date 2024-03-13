@@ -8,7 +8,7 @@ import TrackVisibility from 'react-on-screen';
 export const Skills = () => {
   return (
     <section className="Skill-section" id="Skills">
-         <div className="divider">   <img src={divider} alt="Header Img"/></div>
+         {/* <div className="divider">   <img src={divider} alt="Header Img"/></div> */}
         <Container>
             <div className="Skills">
                 <h1> Tools and Technologies I use to bring projects to life:</h1>
@@ -84,7 +84,7 @@ export const Skills = () => {
 
             </div>
         </Container>
-        <div className="divider2">   <img src={divider2} alt="Header Img"/></div>
+        {/* <div className="divider2">   <img src={divider2} alt="Header Img"/></div> */}
     </section>
   )
 }

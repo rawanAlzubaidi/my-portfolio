@@ -380,7 +380,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* --------------------------Project css */
 .Project-section{
-  background-color:#8CBEFE;
+  background-color: #F2F2F2;
 }
 
 
@@ -403,20 +403,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .projects h2{
   color:var(--light-navy);
   text-align: left;
-  /* padding: 1rem; */
   padding: 30px 0 8px;
   position: relative;
-  
-  /* background-color: #144241;
-  border-radius: 2rem; */
-
-  
 }
 
 .project-text{
   background-color: var(--dark-navy);
   display: block;
-  /* align-items: center; */
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
@@ -513,29 +506,89 @@ h3{
   animation: blink 1s ease-in-out infinite;
 }
 
+.divider {
+  border-top: 2px solid #3498db;
+  width: 50%;
+  margin: 0 auto;
+}
 
-/* 
-<nav className="nav__container__actions">
-<ul>
-  <li>
-    <Link activeClass="active" smooth spy to="about">
-      ABOUT
-    </Link>
-  </li>
-  <li>
-    <Link activeClass="active" smooth spy to="projects">
-      PROJECTS
-    </Link>
-  </li>
-  <li>
-    <Link activeClass="active" smooth spy to="blog">
-      BLOG
-    </Link>
-  </li>
-  <li>
-    <Link activeClass="active" smooth spy to="contact">
-      CONTACT ME
-    </Link>
-  </li>
-</ul>
-</nav> */
+
+.howdyHack-img-size {
+  max-width: 200px;
+  height: auto;
+}
+.project-image {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  color: #333; 
+}
+
+.project-image:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.project-description {
+  color: #333; 
+  font-size: 16px; 
+  margin-bottom: 15px;
+}
+
+.project-title {
+  color: #2c3e50;  
+  font-size: 20px; 
+  font-weight: bold; 
+  margin-top: 0;
+  margin-bottom: 10px; 
+}
+
+
+/* AboutMe.css */
+
+/* Container for buttons */
+.content-buttons {
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Generic button styling */
+.content-buttons button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.content-buttons button:hover {
+  background-color: #45a049;
+}
+
+/* Active button styling */
+.content-buttons button.active {
+  background-color: #333; /* Darker */
+  color: #fff;
+}
+
+/* CustomModalStyles.css */
+
+.modal-body-custom {
+  background-color: #f0f0f0; /* Example background color */
+  padding: 20px; /* Example padding */
+}
+
+.project-title {
+  color: #333; /* Custom title color */
+}
+
+.project-description {
+  font-size: 1rem; /* Custom description size */
+}
