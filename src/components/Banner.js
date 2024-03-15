@@ -54,12 +54,16 @@ export const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                {/* <span className="tagline">Welcome to my Portfolio</span> */}
-                <h1>{''} </h1>
-                <h1>{`Hey there! I'm Rawan.`} </h1>
-                <h2>{`Software Developer`} </h2>
-                
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <h1>{`Hey there! I'm Rawan.`}</h1>
+                  {/* External links with fade-in effect */}
+                  <div className="mt-4">
+                    <a href="https://www.rawankitabat.com/" target="_blank" rel="noopener noreferrer" className="btn btn-outline-light me-2 fade-in fade-in-1">Blog</a>
+                    <a href="https://rawanpov.vercel.app/" target="_blank" className="btn btn-outline-light me-2 fade-in fade-in-2 custom-font ">photography</a>
+                    <a href="https://www.youtube.com/playlist?list=PLZswni9Vqi6kkxGei9INCFCebzIgxdrFB" target="_blank" className="btn btn-outline-light me-2 fade-in fade-in-3 custom-font ">Videography</a>
+                    <a href="https://www.rawanalzubaidi.com/#Project-section" target="_blank" className="btn btn-outline-light fade-in fade-in-4 custom-font ">Software developer</a>
+                  </div>
+
               </div>}
             </TrackVisibility>
           </Col>

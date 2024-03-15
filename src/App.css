@@ -1,14 +1,31 @@
 :root{
   --blue-ligh: #8eb5fa;
   --light-text:rgb(136,146,176);
-  --light-navy: #112240;
-  --dark-navy: #151F28
+  --light-navy: #002451;
+  --dark-navy: ##002451;
+  --peach:#FF9DA4;
+  --pink: #EABBFF;
+  --green:#D1F1A9;
+  --blue:#BBDAFF;
+  --yellow:#FFD602;
+}
+@font-face {
+  font-family: 'Cascadia Code';
+  src: url('./assets/img/fonts/CascadiaCode.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* body {
+  font-family: 'Cascadia Code', monospace;
+} */
+.custom-font {
+  font-family: 'Cascadia Code', monospace; /* Replace with your font name */
 }
 
 .App {
   text-align: center;
   font-family: 'Nunito', sans-serif !important;
-  /* color:#151F28;; */
 }
 
 
@@ -102,7 +119,7 @@ p.danger {
 }
 /************ Navbar Css ************/
 nav.navbar {
-  padding: 10px 0;
+  /* padding: 10px 0; */
   position: fixed;
   width: 100%;
   top: 0;
@@ -111,10 +128,10 @@ nav.navbar {
 }
 nav.navbar.scrolled {
   padding: 0px 0;
-  background: linear-gradient(100deg, rgba(0, 109, 45, 0.9) , rgba(17, 78, 247, 0.9) );
+  background: linear-gradient(100deg, #BBDAFF , #BBDAFF );
 }
 nav.navbar a.navbar-brand {
-    width: 9%;
+    width: 5%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
@@ -245,8 +262,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 180px 0 100px 0;
-  /* background-image: url('./assets/img/finish.jpg'); */
+  padding: 100px 0 100px 0;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -266,7 +282,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   font-weight: 600;
-
+  font-family: 'Cascadia Code', monospace;
   margin-bottom: 20px;
   display: block;
 }
@@ -314,6 +330,35 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease forwards;
+}
+
+.fade-in-1 {
+  animation-delay: 0s;
+}
+
+.fade-in-2 {
+  animation-delay: 0.5s;
+}
+
+.fade-in-3 {
+  animation-delay: 1s;
+}
+
+.fade-in-4 {
+  animation-delay: 1.5s;
 }
 
 
@@ -380,16 +425,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* --------------------------Project css */
 .Project-section{
-  background-color: #F2F2F2;
+  background-color: var(--dark-navy);
 }
 
 
 .Project-section h1{
-  color: var(--light-navy);
+  color: var(--blue);
   font-weight: 50;
   text-align: center;
   margin-bottom: 2rem;
-
+  font-family: 'Cascadia Code', monospace;
 }
 
 .projects h1{
@@ -454,16 +499,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* About me css */
 .aboutMe {
-
   border: 2px solid black;
   border-radius: 12px;
-  border-color:var(--light-navy);
-  
+  border-color:var(--blue);
+  margin-bottom:30px;
 }
 
 .aboutMe p{
   font-size: 16px;
-  font-family: var(--nunito);
+  /* font-family: var(--nunito); */
+  font-family: 'Cascadia Code', monospace;
   line-height: 145%;
   font-weight: 400;
   width: 100%;
@@ -476,11 +521,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width:30%;
 }
 .aboutMe .headers h1{
-  font-family: "Poppins", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
   /* text-transform: uppercase; */
+  font-family: 'Cascadia Code', monospace;
   margin: 0 0 10px;
   font-size: 2rem;
-  color:var(--light-text);
+  color:var(--blue);
   letter-spacing: 0.06rem;
   padding-top: 12px;
   font-weight: 500;
@@ -553,9 +599,9 @@ h3{
 
 /* Generic button styling */
 .content-buttons button {
-  background-color: #4CAF50; /* Green */
+  background-color: var(--green); /* Green */
   border: none;
-  color: white;
+  color: var(--light-navy);
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -569,12 +615,12 @@ h3{
 
 /* Button hover effect */
 .content-buttons button:hover {
-  background-color: #45a049;
+  background-color: var(--green);
 }
 
 /* Active button styling */
 .content-buttons button.active {
-  background-color: #333; /* Darker */
+  background-color: var(--peach); /* Darker */
   color: #fff;
 }
 
@@ -583,6 +629,12 @@ h3{
 .modal-body-custom {
   background-color: #f0f0f0; /* Example background color */
   padding: 20px; /* Example padding */
+}
+.project-body h3{
+  color: #333; /* Custom title color */
+}
+.project-body p{
+  color: #333; /* Custom title color */
 }
 
 .project-title {
