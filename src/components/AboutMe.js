@@ -7,11 +7,11 @@ export const AboutMe = () => {
 
   //content for each button
   const content = {
-    short: <p>Hey there, I am a software developer in Houston. I love creating.</p>,
+    short: <p>Hey there, I am a software developer in Houston.</p>,
     longer: <p>Hello! I'm a software developer based in Houston. I earned my degree in computer science from Texas A&M University. I'm passionate about turning ideas into reality, especially when it allows me to blend my varied interests.</p>,
     long: (
       <p>
-        I was born in Iraq, and my first language is Arabic. My name, Rawan, in Arabic is written as روان (right to left). I am fluent in Turkish and English. Growing up, I had the privilege of living in six different countries, including Syria, Egypt, Malaysia, Turkey, and now the United States for the past 9 years (this is the longest I have stayed in a country). This has given me a unique perspective and a deep appreciation for different cultures. I love to read, especially different literature from all around the world. I currently call Austin and Houston home. I have a passion for videography and video editing. I love being able to document the things I enjoy and bring them into one platform. One of my biggest aspirations is to film a short film or a documentary combining my love of storytelling and technology. Okay now that we are besties... I share some blogs, stories, reflections in this blog feel free to check it out. <a href="https://www.rawankitabat.com" target="_blank" rel="noopener noreferrer"> Kitabat</a>
+        I was born in Iraq, and my first language is Arabic. My name, Rawan, in Arabic is written as روان (right to left). I am fluent in Turkish and English. Growing up, I had the privilege of living in six different countries, Syria, Egypt, Malaysia, Turkey, and now the United States for the past 9 years (this is the longest I have stayed in a country). This has given me a unique perspective and a deep appreciation for different cultures. I love to read, especially different literature from all around the world. I currently call Austin and Houston home. I have a passion for videography and video editing. I love being able to document the things I enjoy and bring them to life. One of my biggest aspirations is to film a short film or a documentary combining my love of storytelling and technology. Okay now that we are besties... I share some blogs, stories, reflections in this blog feel free to check it out. <a href="https://www.rawankitabat.com" target="_blank" rel="noopener noreferrer"> Kitabat</a>
       </p>
     )
   };
