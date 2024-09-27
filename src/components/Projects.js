@@ -65,7 +65,7 @@ export const Projects = () => {
         },
         msa: {
             img: tamumsa,
-            title: "Capstone project",
+            title: "MSA wesbite",
             headers: ['Inspiration/Problem', 'Solution', 'Technologies/Tools'],
             paragraphs: [
                 
